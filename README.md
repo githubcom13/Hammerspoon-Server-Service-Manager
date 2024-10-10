@@ -36,11 +36,34 @@ A Hammerspoon script for managing Apache, Nginx, PHP, and MySQL server services 
    ```
 
 ## Usage
-- The script adds a menu bar icon called "Services" to your macOS menu bar.
-- Click on the "Services" icon to:
-  - Start, stop, or restart individual services.
-  - View and clear logs for Apache, Nginx, PHP, and MySQL.
-  - Open configuration files for easy editing.
+
+The script adds a menu bar icon called "Services" to your macOS menu bar.
+Click on the "Services" icon to:
+- Start, stop, or restart individual services.
+- View and clear logs for Apache, Nginx, PHP, and MySQL.
+- Open configuration files for easy editing.
+
+## Setting up Hammerspoon with the Lua Code
+
+To integrate the Lua code with Hammerspoon, follow these steps:
+
+1. **Download the `init.lua` file**:
+   Make sure you have the `init.lua` file in your project directory. This file contains the necessary Lua code to manage your server services.
+
+2. **Copy the `init.lua` file to the Hammerspoon configuration directory**:
+   Run the following command in your terminal to move the `init.lua` file to the Hammerspoon configuration folder:
+   ```bash
+   cp init.lua ~/.hammerspoon/
+   ```
+
+3. **Reload the Hammerspoon configuration**:
+   Open Hammerspoon and reload the configuration by clicking on the Hammerspoon icon in the menu bar and selecting "Reload Config," or run the following command in the Hammerspoon console:
+   ```lua
+   hs.reload()
+   ```
+
+4. **Verify the setup**:
+   After reloading, you should see the "Services" menu in your macOS menu bar, allowing you to manage Apache, Nginx, PHP, and MySQL services directly.
 
 ## Menu Previews
 
